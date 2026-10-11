@@ -1,0 +1,30 @@
+warning: Error disabling address space randomization: Operation not permitted
+Breakpoint 1 at 0x25cbc: file /workspace/rucbase-lab/src/storage/buffer_pool_manager.cpp, line 63.
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = BufferPoolManagerTest.SimpleTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BufferPoolManagerTest
+[ RUN      ] BufferPoolManagerTest.SimpleTest
+
+Breakpoint 1, BufferPoolManager::new_page (this=0xaaab040be990, id=0xffffd34fdc40) at /workspace/rucbase-lab/src/storage/buffer_pool_manager.cpp:63
+63	Page* BufferPoolManager::new_page(PageId* id) {
+$1 = 10
+#0  BufferPoolManager::new_page (this=0xaaab040be990, id=0xffffd34fdc40) at /workspace/rucbase-lab/src/storage/buffer_pool_manager.cpp:63
+#1  0x0000aaaac6a9bed8 in BufferPoolManagerTest_SimpleTest_Test::TestBody (this=0xaaab040b4eb0) at /workspace/rucbase-lab/src/test/storage/buffer_pool_manager_test.cpp:97
+#2  0x0000aaaac6b03d6c in testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void> (object=0xaaab040b4eb0, method=&virtual testing::Test::TestBody(), location=0xaaaac6b1cd30 "the test body") at /workspace/rucbase-lab/deps/googletest/googletest/src/gtest.cc:2601
+[       OK ] BufferPoolManagerTest.SimpleTest (63 ms)
+[----------] 1 test from BufferPoolManagerTest (63 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (64 ms total)
+[  PASSED  ] 1 test.
+[Inferior 1 (process 3815) exited normally]

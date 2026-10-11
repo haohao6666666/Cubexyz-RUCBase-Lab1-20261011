@@ -1,0 +1,212 @@
+[
+  {
+    "kind": "page",
+    "operation": "sequential",
+    "pool_frames": 32,
+    "size": 100000,
+    "median": 58.6833,
+    "minimum": 51.8634,
+    "maximum": 78.7358,
+    "checksum": "102051504"
+  },
+  {
+    "kind": "page",
+    "operation": "sequential",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 52.8243,
+    "minimum": 52.0894,
+    "maximum": 54.3758,
+    "checksum": "102051504"
+  },
+  {
+    "kind": "page",
+    "operation": "sequential",
+    "pool_frames": 512,
+    "size": 100000,
+    "median": 54.1962,
+    "minimum": 52.9854,
+    "maximum": 75.2511,
+    "checksum": "102051504"
+  },
+  {
+    "kind": "page",
+    "operation": "uniform",
+    "pool_frames": 32,
+    "size": 100000,
+    "median": 67.4575,
+    "minimum": 53.382,
+    "maximum": 78.1367,
+    "checksum": "102245097"
+  },
+  {
+    "kind": "page",
+    "operation": "uniform",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 51.774,
+    "minimum": 51.1689,
+    "maximum": 76.6844,
+    "checksum": "102245097"
+  },
+  {
+    "kind": "page",
+    "operation": "uniform",
+    "pool_frames": 512,
+    "size": 100000,
+    "median": 47.5608,
+    "minimum": 46.7059,
+    "maximum": 48.7257,
+    "checksum": "102245097"
+  },
+  {
+    "kind": "page",
+    "operation": "hotspot",
+    "pool_frames": 32,
+    "size": 100000,
+    "median": 34.8405,
+    "minimum": 33.2402,
+    "maximum": 36.0636,
+    "checksum": "13076932"
+  },
+  {
+    "kind": "page",
+    "operation": "hotspot",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 11.0796,
+    "minimum": 10.9129,
+    "maximum": 12.0962,
+    "checksum": "13076932"
+  },
+  {
+    "kind": "page",
+    "operation": "hotspot",
+    "pool_frames": 512,
+    "size": 100000,
+    "median": 10.995,
+    "minimum": 10.8629,
+    "maximum": 14.1481,
+    "checksum": "13076932"
+  },
+  {
+    "kind": "record",
+    "operation": "insert",
+    "pool_frames": 128,
+    "size": 10000,
+    "median": 0.893209,
+    "minimum": 0.875333,
+    "maximum": 0.960625,
+    "checksum": "49995000"
+  },
+  {
+    "kind": "record",
+    "operation": "scan",
+    "pool_frames": 128,
+    "size": 10000,
+    "median": 1.63375,
+    "minimum": 1.6175,
+    "maximum": 1.66692,
+    "checksum": "49995000"
+  },
+  {
+    "kind": "record",
+    "operation": "update",
+    "pool_frames": 128,
+    "size": 10000,
+    "median": 0.9565,
+    "minimum": 0.93875,
+    "maximum": 0.95875,
+    "checksum": "50005000"
+  },
+  {
+    "kind": "record",
+    "operation": "delete",
+    "pool_frames": 128,
+    "size": 10000,
+    "median": 0.888209,
+    "minimum": 0.886083,
+    "maximum": 0.905667,
+    "checksum": "10000"
+  },
+  {
+    "kind": "record",
+    "operation": "insert",
+    "pool_frames": 128,
+    "size": 50000,
+    "median": 5.21158,
+    "minimum": 5.19733,
+    "maximum": 5.24883,
+    "checksum": "1249975000"
+  },
+  {
+    "kind": "record",
+    "operation": "scan",
+    "pool_frames": 128,
+    "size": 50000,
+    "median": 8.26308,
+    "minimum": 8.21604,
+    "maximum": 8.91617,
+    "checksum": "1249975000"
+  },
+  {
+    "kind": "record",
+    "operation": "update",
+    "pool_frames": 128,
+    "size": 50000,
+    "median": 4.53875,
+    "minimum": 4.47692,
+    "maximum": 4.67742,
+    "checksum": "1250025000"
+  },
+  {
+    "kind": "record",
+    "operation": "delete",
+    "pool_frames": 128,
+    "size": 50000,
+    "median": 4.21696,
+    "minimum": 4.06588,
+    "maximum": 4.3175,
+    "checksum": "50000"
+  },
+  {
+    "kind": "record",
+    "operation": "insert",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 10.1207,
+    "minimum": 10.037,
+    "maximum": 10.3132,
+    "checksum": "4999950000"
+  },
+  {
+    "kind": "record",
+    "operation": "scan",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 15.0418,
+    "minimum": 14.9581,
+    "maximum": 15.2328,
+    "checksum": "4999950000"
+  },
+  {
+    "kind": "record",
+    "operation": "update",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 8.914,
+    "minimum": 8.83942,
+    "maximum": 8.92208,
+    "checksum": "5000050000"
+  },
+  {
+    "kind": "record",
+    "operation": "delete",
+    "pool_frames": 128,
+    "size": 100000,
+    "median": 8.22029,
+    "minimum": 8.05537,
+    "maximum": 8.34938,
+    "checksum": "100000"
+  }
+]

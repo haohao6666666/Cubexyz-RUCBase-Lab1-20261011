@@ -1,0 +1,275 @@
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_buffer_pool_manager_test.dir/storage/buffer_pool_manager_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_buffer_pool_manager_test
+[100%] Built target lab1_buffer_pool_manager_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_fresh_boundary_test.dir/storage/fresh_boundary_test.cpp.o
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp: In member function ‘virtual void FreshStorage_SharedDescriptorPageIo_Test::TestBody()’:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:35:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   35 |     for(auto& t:threads)t.join(); disk.close_file(fd);
+      |     ^~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:35:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   35 |     for(auto& t:threads)t.join(); disk.close_file(fd);
+      |                                   ^~~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp: In member function ‘virtual void FreshLru_DuplicateReleaseAndConcurrentMembership_Test::TestBody()’:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:92:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   92 |     for(auto& t:threads)t.join();EXPECT_EQ(lru.Size(),4u);std::set<int> found;while(lru.victim(&victim))EXPECT_TRUE(found.insert(victim).second);EXPECT_EQ(found.size(),4u);
+      |     ^~~
+In file included from /workspace/rucbase-lab/deps/googletest/googletest/include/gtest/gtest-message.h:55,
+                 from /workspace/rucbase-lab/deps/googletest/googletest/include/gtest/gtest-assertion-result.h:46,
+                 from /workspace/rucbase-lab/deps/googletest/googletest/include/gtest/gtest.h:59,
+                 from /workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:2:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:92:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   92 |     for(auto& t:threads)t.join();EXPECT_EQ(lru.Size(),4u);std::set<int> found;while(lru.victim(&victim))EXPECT_TRUE(found.insert(victim).second);EXPECT_EQ(found.size(),4u);
+      |                                  ^~~~~~~~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp: In member function ‘virtual void FreshStorage_RecordAllocationFailureKeepsHeader_Test::TestBody()’:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:108:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  108 |     for(auto id:pinned)pool.unpin_page(id,false);records.close_file(file.get());
+      |     ^~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:108:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  108 |     for(auto id:pinned)pool.unpin_page(id,false);records.close_file(file.get());
+      |                                                  ^~~~~~~
+[100%] Linking CXX executable ../../bin/lab1_fresh_boundary_test
+[100%] Built target lab1_fresh_boundary_test
+Internal ctest changing into directory: /workspace/rucbase-lab/build/sanitizers
+UpdateCTestConfiguration  from :/workspace/rucbase-lab/build/sanitizers/DartConfiguration.tcl
+Parse Config file:/workspace/rucbase-lab/build/sanitizers/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/workspace/rucbase-lab/build/sanitizers/DartConfiguration.tcl
+Parse Config file:/workspace/rucbase-lab/build/sanitizers/DartConfiguration.tcl
+Test project /workspace/rucbase-lab/build/sanitizers
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: lab1_disk_manager_test
+
+1: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_disk_manager_test
+1: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_disk_manager_test
+1: Test timeout computed to be: 1500
+1: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+1: [==========] Running 2 tests from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 2 tests from DiskManagerTest
+1: [ RUN      ] DiskManagerTest.FileOperation
+1: [       OK ] DiskManagerTest.FileOperation (19 ms)
+1: [ RUN      ] DiskManagerTest.PageOperation
+1: [       OK ] DiskManagerTest.PageOperation (7 ms)
+1: [----------] 2 tests from DiskManagerTest (26 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 2 tests from 1 test suite ran. (26 ms total)
+1: [  PASSED  ] 2 tests.
+1/9 Test  #1: lab1_disk_manager_test ...........   Passed    0.04 sec
+test 2
+    Start  2: lab1_lru_replacer_test
+
+2: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_lru_replacer_test
+2: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_lru_replacer_test
+2: Test timeout computed to be: 1500
+2: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+2: [==========] Running 3 tests from 1 test suite.
+2: [----------] Global test environment set-up.
+2: [----------] 3 tests from LRUReplacerTest
+2: [ RUN      ] LRUReplacerTest.SimpleTest
+2: [       OK ] LRUReplacerTest.SimpleTest (0 ms)
+2: [ RUN      ] LRUReplacerTest.MixTest
+2: [       OK ] LRUReplacerTest.MixTest (2909 ms)
+2: [ RUN      ] LRUReplacerTest.ConcurrencyTest
+2: [       OK ] LRUReplacerTest.ConcurrencyTest (16270 ms)
+2: [----------] 3 tests from LRUReplacerTest (19180 ms total)
+2: 
+2: [----------] Global test environment tear-down
+2: [==========] 3 tests from 1 test suite ran. (19181 ms total)
+2: [  PASSED  ] 3 tests.
+2/9 Test  #2: lab1_lru_replacer_test ...........   Passed   19.20 sec
+test 3
+    Start  3: lab1_buffer_pool_manager_test
+
+3: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_buffer_pool_manager_test
+3: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_buffer_pool_manager_test
+3: Test timeout computed to be: 1500
+3: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+3: [==========] Running 4 tests from 1 test suite.
+3: [----------] Global test environment set-up.
+3: [----------] 4 tests from BufferPoolManagerTest
+3: [ RUN      ] BufferPoolManagerTest.SimpleTest
+3: [       OK ] BufferPoolManagerTest.SimpleTest (2 ms)
+3: [ RUN      ] BufferPoolManagerTest.LargeScaleTest
+3: [       OK ] BufferPoolManagerTest.LargeScaleTest (10924 ms)
+3: [ RUN      ] BufferPoolManagerTest.MultipleFilesTest
+3: [       OK ] BufferPoolManagerTest.MultipleFilesTest (8692 ms)
+3: [ RUN      ] BufferPoolManagerTest.ConcurrencyTest
+3: [       OK ] BufferPoolManagerTest.ConcurrencyTest (33366 ms)
+3: [----------] 4 tests from BufferPoolManagerTest (52986 ms total)
+3: 
+3: [----------] Global test environment tear-down
+3: [==========] 4 tests from 1 test suite ran. (52986 ms total)
+3: [  PASSED  ] 4 tests.
+3/9 Test  #3: lab1_buffer_pool_manager_test ....   Passed   53.03 sec
+test 4
+    Start  4: lab1_page_guard_test
+
+4: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_page_guard_test
+4: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_page_guard_test
+4: Test timeout computed to be: 1500
+4: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+4: [==========] Running 3 tests from 2 test suites.
+4: [----------] Global test environment set-up.
+4: [----------] 1 test from PageGuardValueTest
+4: [ RUN      ] PageGuardValueTest.DefaultAndMovedFromGuardsAreHarmless
+4: [       OK ] PageGuardValueTest.DefaultAndMovedFromGuardsAreHarmless (0 ms)
+4: [----------] 1 test from PageGuardValueTest (0 ms total)
+4: 
+4: [----------] 2 tests from PageGuardTest
+4: [ RUN      ] PageGuardTest.ScopeAndExplicitDropReleaseExactlyOnePin
+4: [       OK ] PageGuardTest.ScopeAndExplicitDropReleaseExactlyOnePin (5 ms)
+4: [ RUN      ] PageGuardTest.MoveAssignmentReleasesThePreviousPin
+4: [       OK ] PageGuardTest.MoveAssignmentReleasesThePreviousPin (4 ms)
+4: [----------] 2 tests from PageGuardTest (9 ms total)
+4: 
+4: [----------] Global test environment tear-down
+4: [==========] 3 tests from 2 test suites ran. (10 ms total)
+4: [  PASSED  ] 3 tests.
+4/9 Test  #4: lab1_page_guard_test .............   Passed    0.05 sec
+test 5
+    Start  5: lab1_record_manager_test
+
+5: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_record_manager_test
+5: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_record_manager_test
+5: Test timeout computed to be: 1500
+5: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+5: [==========] Running 2 tests from 1 test suite.
+5: [----------] Global test environment set-up.
+5: [----------] 2 tests from RecordManagerTest
+5: [ RUN      ] RecordManagerTest.SimpleTest
+5: insert 430
+5: delete 280
+5: update 290
+5: [       OK ] RecordManagerTest.SimpleTest (138190 ms)
+5: [ RUN      ] RecordManagerTest.MultipleFilesTest
+5: [       OK ] RecordManagerTest.MultipleFilesTest (3537 ms)
+5: [----------] 2 tests from RecordManagerTest (141728 ms total)
+5: 
+5: [----------] Global test environment tear-down
+5: [==========] 2 tests from 1 test suite ran. (141729 ms total)
+5: [  PASSED  ] 2 tests.
+5/9 Test  #5: lab1_record_manager_test .........   Passed  141.86 sec
+test 6
+    Start  6: lab1_record_types_test
+
+6: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_record_types_test
+6: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_record_types_test
+6: Test timeout computed to be: 1500
+6: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+6: [==========] Running 3 tests from 2 test suites.
+6: [----------] Global test environment set-up.
+6: [----------] 2 tests from RecordValueTest
+6: [ RUN      ] RecordValueTest.SupportsCopyMoveAndSelfAssignment
+6: [       OK ] RecordValueTest.SupportsCopyMoveAndSelfAssignment (0 ms)
+6: [ RUN      ] RecordValueTest.DeserializesUnalignedInputAndValidatesLength
+6: [       OK ] RecordValueTest.DeserializesUnalignedInputAndValidatesLength (0 ms)
+6: [----------] 2 tests from RecordValueTest (0 ms total)
+6: 
+6: [----------] 1 test from PageIdTest
+6: [ RUN      ] PageIdTest.OrdersByFileThenPage
+6: [       OK ] PageIdTest.OrdersByFileThenPage (0 ms)
+6: [----------] 1 test from PageIdTest (0 ms total)
+6: 
+6: [----------] Global test environment tear-down
+6: [==========] 3 tests from 2 test suites ran. (0 ms total)
+6: [  PASSED  ] 3 tests.
+6/9 Test  #6: lab1_record_types_test ...........   Passed    0.01 sec
+test 7
+    Start  7: lab1_record_layout_test
+
+7: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_record_layout_test
+7: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_record_layout_test
+7: Test timeout computed to be: 1500
+7: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+7: [==========] Running 2 tests from 1 test suite.
+7: [----------] Global test environment set-up.
+7: [----------] 2 tests from RecordPageLayoutTest
+7: [ RUN      ] RecordPageLayoutTest.CapacityFillsThePageWithoutOverflow
+7: [       OK ] RecordPageLayoutTest.CapacityFillsThePageWithoutOverflow (0 ms)
+7: [ RUN      ] RecordPageLayoutTest.PageHandlePointsToHeaderBitmapAndSlots
+7: [       OK ] RecordPageLayoutTest.PageHandlePointsToHeaderBitmapAndSlots (0 ms)
+7: [----------] 2 tests from RecordPageLayoutTest (0 ms total)
+7: 
+7: [----------] Global test environment tear-down
+7: [==========] 2 tests from 1 test suite ran. (0 ms total)
+7: [  PASSED  ] 2 tests.
+7/9 Test  #7: lab1_record_layout_test ..........   Passed    0.01 sec
+test 8
+    Start  8: lab1_rm_page_guard_test
+
+8: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_rm_page_guard_test
+8: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_rm_page_guard_test
+8: Test timeout computed to be: 1500
+8: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+8: [==========] Running 2 tests from 1 test suite.
+8: [----------] Global test environment set-up.
+8: [----------] 2 tests from RmPageGuardTest
+8: [ RUN      ] RmPageGuardTest.ReleasesPinAndPropagatesDirty
+8: [       OK ] RmPageGuardTest.ReleasesPinAndPropagatesDirty (1 ms)
+8: [ RUN      ] RmPageGuardTest.ExceptionUnpins
+8: [       OK ] RmPageGuardTest.ExceptionUnpins (0 ms)
+8: [----------] 2 tests from RmPageGuardTest (2 ms total)
+8: 
+8: [----------] Global test environment tear-down
+8: [==========] 2 tests from 1 test suite ran. (2 ms total)
+8: [  PASSED  ] 2 tests.
+8/9 Test  #8: lab1_rm_page_guard_test ..........   Passed    0.01 sec
+test 32
+    Start 32: lab1_fresh_boundary_test
+
+32: Test command: /workspace/rucbase-lab/build/sanitizers/bin/lab1_fresh_boundary_test
+32: Working Directory: /workspace/rucbase-lab/build/sanitizers/src/test/lab1_fresh_boundary_test
+32: Test timeout computed to be: 1500
+32: Running main() from /workspace/rucbase-lab/deps/googletest/googletest/src/gtest_main.cc
+32: [==========] Running 10 tests from 2 test suites.
+32: [----------] Global test environment set-up.
+32: [----------] 9 tests from FreshStorage
+32: [ RUN      ] FreshStorage.PartialIoAndInvalidArguments
+32: [       OK ] FreshStorage.PartialIoAndInvalidArguments (1 ms)
+32: [ RUN      ] FreshStorage.SharedDescriptorPageIo
+32: [       OK ] FreshStorage.SharedDescriptorPageIo (7 ms)
+32: [ RUN      ] FreshStorage.ExhaustionDoesNotAllocateAndDirtySurvives
+32: [       OK ] FreshStorage.ExhaustionDoesNotAllocateAndDirtySurvives (0 ms)
+32: [ RUN      ] FreshStorage.FailedFetchRestoresCandidate
+32: [       OK ] FreshStorage.FailedFetchRestoresCandidate (0 ms)
+32: [ RUN      ] FreshStorage.ZeroPagePersistsAndDescriptorReuseIsSafe
+32: [       OK ] FreshStorage.ZeroPagePersistsAndDescriptorReuseIsSafe (2 ms)
+32: [ RUN      ] FreshStorage.InvalidRidAndEmptyScanDoNotLeakPins
+32: [       OK ] FreshStorage.InvalidRidAndEmptyScanDoNotLeakPins (0 ms)
+32: [ RUN      ] FreshStorage.RandomizedRecordsAgainstIndependentMap
+32: [       OK ] FreshStorage.RandomizedRecordsAgainstIndependentMap (4125 ms)
+32: [ RUN      ] FreshStorage.EmptyMiddlePageAndSlotReuse
+32: [       OK ] FreshStorage.EmptyMiddlePageAndSlotReuse (17 ms)
+32: [ RUN      ] FreshStorage.RecordAllocationFailureKeepsHeader
+32: [       OK ] FreshStorage.RecordAllocationFailureKeepsHeader (3 ms)
+32: [----------] 9 tests from FreshStorage (4161 ms total)
+32: 
+32: [----------] 1 test from FreshLru
+32: [ RUN      ] FreshLru.DuplicateReleaseAndConcurrentMembership
+32: [       OK ] FreshLru.DuplicateReleaseAndConcurrentMembership (80 ms)
+32: [----------] 1 test from FreshLru (80 ms total)
+32: 
+32: [----------] Global test environment tear-down
+32: [==========] 10 tests from 2 test suites ran. (4242 ms total)
+32: [  PASSED  ] 10 tests.
+9/9 Test #32: lab1_fresh_boundary_test .........   Passed    4.26 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Label Time Summary:
+lab1    = 218.47 sec*proc (9 tests)
+unit    = 218.47 sec*proc (9 tests)
+
+Total Test time (real) = 218.50 sec

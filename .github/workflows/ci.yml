@@ -1,11 +1,6 @@
 name: RUCBase CI
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-  schedule:
-    - cron: '17 18 * * 1'
   workflow_dispatch:
     inputs:
       run_lab_tests:

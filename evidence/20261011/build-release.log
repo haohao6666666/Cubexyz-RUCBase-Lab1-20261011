@@ -1,0 +1,51 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Release"
+
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Python: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found BISON: /usr/bin/bison (found version "3.8.2") 
+-- Found FLEX: /usr/bin/flex (found version "2.6.4") 
+-- Configuring done (1.1s)
+-- Generating done (1.2s)
+-- Build files have been written to: /workspace/rucbase-lab/build/release
+[ 14%] Building CXX object src/CMakeFiles/rucbase_core.dir/execution/execution_manager.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/rucbase_core.dir/analyze/analyzer.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/rucbase_core.dir/common/context.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/b_plus_tree.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/index_manager.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/index_scan.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/index_types.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/rucbase_core.dir/optimizer/planner.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/rucbase_core.dir/portal/portal.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/rucbase_core.dir/record/rm_file_handle.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/rucbase_core.dir/record/rm_scan.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/rucbase_core.dir/recovery/log_manager.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/rucbase_core.dir/recovery/log_recovery.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/rucbase_core.dir/replacer/lru_replacer.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/rucbase_core.dir/storage/buffer_pool_manager.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/rucbase_core.dir/storage/disk_manager.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/rucbase_core.dir/storage/page_guard.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/rucbase_core.dir/system/sm_meta.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/rucbase_core.dir/system/sm_manager.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/rucbase_core.dir/transaction/concurrency/lock_manager.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/rucbase_core.dir/transaction/transaction_manager.cpp.o
+[ 95%] Linking CXX static library ../lib/librucbase_core.a
+[ 95%] Built target rucbase_core
+[ 95%] Building CXX object src/test/CMakeFiles/lab1_fresh_benchmark.dir/storage/fresh_benchmark.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_fresh_benchmark
+[100%] Built target lab1_fresh_benchmark

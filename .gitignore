@@ -34,3 +34,8 @@ CMakeUserPresets.json
 deps/*
 !deps/nlohmann/
 .dockerignore
+
+# Local experiment databases and Python caches
+BufferPoolManagerTest_db/
+__pycache__/
+bench_*.bin

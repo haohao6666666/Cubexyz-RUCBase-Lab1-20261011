@@ -192,3 +192,7 @@ if(Python3_Interpreter_FOUND)
 else()
     message(STATUS "Python 3 was not found; black-box tests are not registered")
 endif()
+
+rucbase_add_gtest(lab1_fresh_boundary_test storage/fresh_boundary_test.cpp rucbase::core unit lab1)
+add_executable(lab1_fresh_benchmark storage/fresh_benchmark.cpp)
+target_link_libraries(lab1_fresh_benchmark PRIVATE rucbase::core rucbase::project_options)

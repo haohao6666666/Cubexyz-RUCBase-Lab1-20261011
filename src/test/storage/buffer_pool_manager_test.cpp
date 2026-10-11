@@ -66,7 +66,7 @@ public:
     /**
      * @brief 随机获取mock中的键
      */
-    int rand_fd(std::unordered_map<int, char*> mock) {
+    int rand_fd(const std::unordered_map<int, std::unique_ptr<char[]>>& mock) {
         assert(mock.size() == MAX_FILES);
         int fd_idx = rand() % MAX_FILES;
         auto it = mock.begin();
@@ -192,7 +192,7 @@ TEST_F(BufferPoolManagerTest, MultipleFilesTest) {
 
     // mock记录生成文件的(文件fd, page在内存中的首地址)
     // page在内存中的首地址是page在内存中的备份
-    std::unordered_map<int, char*> mock;  // fd -> page address
+    std::unordered_map<int, std::unique_ptr<char[]>> mock;  // fd -> page address
 
     std::vector<std::string> filenames(MAX_FILES);  // MAX_FILES=32
     std::unordered_map<int, std::string> fd2name;
@@ -206,7 +206,7 @@ TEST_F(BufferPoolManagerTest, MultipleFilesTest) {
         disk_manager_->create_file(filename);
         int fd = disk_manager_->open_file(filename);
 
-        mock[fd] = new char[static_cast<size_t>(PAGE_SIZE) * MAX_PAGES];
+        mock[fd] = std::make_unique<char[]>(static_cast<size_t>(PAGE_SIZE) * MAX_PAGES);
         fd2name[fd] = filename;
 
         disk_manager_->set_fd2pageno(fd, 0);  // 设置diskmanager在fd对应的文件中从0开始分配page_no

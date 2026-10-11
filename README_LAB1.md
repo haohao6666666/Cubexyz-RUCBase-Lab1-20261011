@@ -58,4 +58,8 @@ Release 构建，固定种子 `20261011`，21 组配置各重复 5 次。
 python3 scripts/plot_lab1.py evidence/20261011
 ```
 
+页布局、缓冲帧状态及两个操作流程图由 `scripts/draw_lab1_diagrams.py` 绘制，输出 PNG 和 SVG。重新绘制需要 matplotlib 与中文字体；macOS 使用宋体，Linux 默认使用 Noto Sans CJK SC。图中的页头、槽偏移、状态和分支均按本次源码核对。
+
+干净检出验收的源码提交为 `ed6be4c625f3b933cc1aef3df1575e2bf4ae6189`，对应 `clean-checkout.log`，后续提交仅补充图表、说明和验收证据。
+
 正常关闭重开不等于崩溃恢复。公开测试通过不代表教师隐藏用例或最终成绩。

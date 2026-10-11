@@ -14,6 +14,8 @@
 
 ## 项目简介
 
+本小组独立重做的 Lab1 实现、实测结果与复现入口见 [Cubexyz 实验说明](README_LAB1.md)。
+
 RUCBase 是由中国人民大学卢卫教授带领数据库教学团队开发的一款教学用数据库管理系统，配套教育部“101计划”计算机核心教材《数据库管理系统原理与实现》建设，主要面向数据库系统课程初学者，为本科数据库系统课程的实验教学提供支撑。
 
 RUCBase 的系统框架参考并借鉴了 CMU 15-445 课程的 [BusTub](https://github.com/cmu-db/bustub) 和 Stanford CS346 课程的 [RedBase](https://web.stanford.edu/class/cs346/2015/redbase.html)。目前，中国人民大学、哈尔滨工业大学、华中科技大学、西北工业大学、西安电子科技大学等高校已使用 RUCBase 开展数据库内核相关实验教学。

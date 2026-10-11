@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "6849e3f2f08f9a096803c1695e5a270067269d4f",
+  "group": "Cubexyz",
+  "date": "2026-10-11",
+  "official_cases": 21,
+  "additional_cases": 10,
+  "measurements": 105,
+  "seed": 20261011,
+  "architecture_figure": "image_gen; checked against this implementation",
+  "screenshots": "browser views of excerpts from real log files produced in this run",
+  "performance_scope": "Release; separate run after sanitizer completion; OS cache warmed; final closing flush excluded",
+  "clean_checkout_source_commit": "ed6be4c625f3b933cc1aef3df1575e2bf4ae6189",
+  "clean_checkout_passed_targets": 9,
+  "report_pages": 22,
+  "report_figures": 12,
+  "illustrations_and_plots": 7,
+  "real_log_screenshots": 5,
+  "contributions": {
+    "倪浩宇": 40,
+    "林锦龙": 20,
+    "王麒瑞": 20,
+    "陈宇": 20
+  }
+}

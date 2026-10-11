@@ -1,0 +1,158 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Python: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found BISON: /usr/bin/bison (found version "3.8.2") 
+-- Found FLEX: /usr/bin/flex (found version "2.6.4") 
+-- Configuring done (0.5s)
+-- Generating done (0.3s)
+-- Build files have been written to: /workspace/rucbase-lab/build/debug
+[  4%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 12%] Building CXX object src/CMakeFiles/rucbase_core.dir/analyze/analyzer.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/rucbase_core.dir/common/context.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/rucbase_core.dir/execution/execution_manager.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/b_plus_tree.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/index_manager.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/index_scan.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/rucbase_core.dir/index/index_types.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/rucbase_core.dir/optimizer/planner.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/rucbase_core.dir/portal/portal.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/rucbase_core.dir/record/rm_file_handle.cpp.o
+[ 40%] Linking CXX static library ../../../lib/libgtest.a
+[ 40%] Built target gtest
+[ 44%] Building CXX object src/CMakeFiles/rucbase_core.dir/record/rm_scan.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/rucbase_core.dir/recovery/log_manager.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/rucbase_core.dir/recovery/log_recovery.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/rucbase_core.dir/replacer/lru_replacer.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/rucbase_core.dir/storage/buffer_pool_manager.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/rucbase_core.dir/storage/disk_manager.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/rucbase_core.dir/storage/page_guard.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/rucbase_core.dir/system/sm_meta.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/rucbase_core.dir/system/sm_manager.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/rucbase_core.dir/transaction/concurrency/lock_manager.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/rucbase_core.dir/transaction/transaction_manager.cpp.o
+[ 84%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 88%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 88%] Built target gtest_main
+[ 92%] Linking CXX static library ../lib/librucbase_core.a
+[ 92%] Built target rucbase_core
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_disk_manager_test.dir/storage/disk_manager_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_disk_manager_test
+[100%] Built target lab1_disk_manager_test
+[  4%] Built target gtest
+[ 12%] Built target gtest_main
+[ 92%] Built target rucbase_core
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_lru_replacer_test.dir/storage/lru_replacer_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_lru_replacer_test
+[100%] Built target lab1_lru_replacer_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_buffer_pool_manager_test.dir/storage/buffer_pool_manager_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_buffer_pool_manager_test
+[100%] Built target lab1_buffer_pool_manager_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_record_manager_test.dir/storage/record_manager_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_record_manager_test
+[100%] Built target lab1_record_manager_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_page_guard_test.dir/storage/page_guard_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_page_guard_test
+[100%] Built target lab1_page_guard_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_record_types_test.dir/record/rm_record_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_record_types_test
+[100%] Built target lab1_record_types_test
+[  4%] Built target gtest
+[ 87%] Built target rucbase_core
+[ 95%] Built target gtest_main
+[ 95%] Building CXX object src/test/CMakeFiles/lab1_record_layout_test.dir/record/rm_page_layout_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_record_layout_test
+[100%] Built target lab1_record_layout_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_rm_page_guard_test.dir/record/rm_page_guard_test.cpp.o
+[100%] Linking CXX executable ../../bin/lab1_rm_page_guard_test
+[100%] Built target lab1_rm_page_guard_test
+[  4%] Built target gtest
+[ 84%] Built target rucbase_core
+[ 92%] Built target gtest_main
+[ 96%] Building CXX object src/test/CMakeFiles/lab1_fresh_boundary_test.dir/storage/fresh_boundary_test.cpp.o
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp: In member function ‘virtual void FreshStorage_SharedDescriptorPageIo_Test::TestBody()’:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:35:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   35 |     for(auto& t:threads)t.join(); disk.close_file(fd);
+      |     ^~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:35:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   35 |     for(auto& t:threads)t.join(); disk.close_file(fd);
+      |                                   ^~~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp: In member function ‘virtual void FreshLru_DuplicateReleaseAndConcurrentMembership_Test::TestBody()’:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:92:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   92 |     for(auto& t:threads)t.join();EXPECT_EQ(lru.Size(),4u);std::set<int> found;while(lru.victim(&victim))EXPECT_TRUE(found.insert(victim).second);EXPECT_EQ(found.size(),4u);
+      |     ^~~
+In file included from /workspace/rucbase-lab/deps/googletest/googletest/include/gtest/gtest-message.h:55,
+                 from /workspace/rucbase-lab/deps/googletest/googletest/include/gtest/gtest-assertion-result.h:46,
+                 from /workspace/rucbase-lab/deps/googletest/googletest/include/gtest/gtest.h:59,
+                 from /workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:2:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:92:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   92 |     for(auto& t:threads)t.join();EXPECT_EQ(lru.Size(),4u);std::set<int> found;while(lru.victim(&victim))EXPECT_TRUE(found.insert(victim).second);EXPECT_EQ(found.size(),4u);
+      |                                  ^~~~~~~~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp: In member function ‘virtual void FreshStorage_RecordAllocationFailureKeepsHeader_Test::TestBody()’:
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:108:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  108 |     for(auto id:pinned)pool.unpin_page(id,false);records.close_file(file.get());
+      |     ^~~
+/workspace/rucbase-lab/src/test/storage/fresh_boundary_test.cpp:108:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  108 |     for(auto id:pinned)pool.unpin_page(id,false);records.close_file(file.get());
+      |                                                  ^~~~~~~
+[100%] Linking CXX executable ../../bin/lab1_fresh_boundary_test
+[100%] Built target lab1_fresh_boundary_test
+Internal ctest changing into directory: /workspace/rucbase-lab/build/debug
+Test project /workspace/rucbase-lab/build/debug
+    Start  1: lab1_disk_manager_test
+1/9 Test  #1: lab1_disk_manager_test ...........   Passed    0.02 sec
+    Start  2: lab1_lru_replacer_test
+2/9 Test  #2: lab1_lru_replacer_test ...........   Passed    0.05 sec
+    Start  3: lab1_buffer_pool_manager_test
+3/9 Test  #3: lab1_buffer_pool_manager_test ....   Passed    3.36 sec
+    Start  4: lab1_page_guard_test
+4/9 Test  #4: lab1_page_guard_test .............   Passed    0.01 sec
+    Start  5: lab1_record_manager_test
+5/9 Test  #5: lab1_record_manager_test .........   Passed    0.33 sec
+    Start  6: lab1_record_types_test
+6/9 Test  #6: lab1_record_types_test ...........   Passed    0.01 sec
+    Start  7: lab1_record_layout_test
+7/9 Test  #7: lab1_record_layout_test ..........   Passed    0.00 sec
+    Start  8: lab1_rm_page_guard_test
+8/9 Test  #8: lab1_rm_page_guard_test ..........   Passed    0.00 sec
+    Start 32: lab1_fresh_boundary_test
+9/9 Test #32: lab1_fresh_boundary_test .........   Passed    0.05 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Label Time Summary:
+lab1    =   3.82 sec*proc (9 tests)
+unit    =   3.82 sec*proc (9 tests)
+
+Total Test time (real) =   3.83 sec
